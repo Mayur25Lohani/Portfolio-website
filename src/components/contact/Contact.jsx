@@ -44,28 +44,28 @@ const Contact = () => {
             <MdOutlineMail className='contact-option-icon'/>
             <h4>Email</h4>
             <h5>lohanimayuresh@gmail.com</h5>
-            <a href="mailto:lohanimayuresh2551@gmail.com" target='_blank'>Send a Message</a>
+            <a href="mailto:lohanimayuresh2551@gmail.com" target='_blank' rel="noreferrer" >Send a Message</a>
           </article>
 
           <article className="contact__option">
             <BsLinkedin className='contact-option-icon'/>
             <h4>LinkedIn</h4>
             <h5>Mayuresh Lohani</h5>
-            <a href="www.linkedin.com/in/mayuresh-lohani-87b28922a" target='_blank'>Send a Message</a>
+            <a href="www.linkedin.com/in/mayuresh-lohani-87b28922a" target='_blank' rel="noreferrer" >Send a Message</a>
           </article>
 
           <article className="contact__option">
             <BsFacebook className='contact-option-icon'/>
             <h4>Facebook</h4>
             <h5>Mayuresh Lohani</h5>
-            <a href="https://www.facebook.com/profile.php?id=100075318804727" target='_blank'>Send a Message</a>
+            <a href="https://www.facebook.com/profile.php?id=100075318804727" target='_blank'rel="noreferrer" >Send a Message</a>
           </article>
 
           {/* <article className="contact__option">
             <BsWhatsapp className='contact-option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+91 7356892392</h5>
-            <a href="https://api.whatsapp.com/send?phone=+917356892392" target='_blank'>Send a Message</a>
+            <a href="https://api.whatsapp.com/send?phone=+917356892392" target='_blank' rel="noreferrer">Send a Message</a>
           </article> */}
 
         </div>
