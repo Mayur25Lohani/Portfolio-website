@@ -12,13 +12,6 @@ const Header = () => {
         <h1>Mayuresh Lohani</h1>
         <h5 className="text-light">Pre-Final Year Undergraduate | IIT Kharagpur | Metallurgical and Materials Engineering </h5>
         <CTA />
-        {/* <HeaderSocials />
-
-        <div className="me">
-          <img src={ME} alt="mee" />
-        </div>
-
-        <a href="#contact" className='scroll__down'>Scroll Down</a> */}
       </div>
     </header>
   )

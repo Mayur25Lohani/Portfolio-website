@@ -119,7 +119,7 @@ footer {
   }
   
   .wave .shape-fill {
-    fill: #12343b;
+    fill: var(--color-bg);
   }
   
   /* Media queries for responsiveness */

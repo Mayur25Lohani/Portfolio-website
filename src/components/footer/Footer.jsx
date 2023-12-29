@@ -65,13 +65,13 @@ const Footer = () => {
               <a className="effect" href="mailto:lohanimayuresh2551@gmail.com">lohanimayures2551@gmail.com</a>
             </p>
             <div className="footer__socials">
-              <a href="https://www.facebook.com/profile.php?id=100075318804727">
+              <a href="https://www.facebook.com/profile.php?id=100075318804727" target='_blank' rel="noreferrer">
                 <FaFacebook />
               </a>
-              <a href="https://instagram.com">
+              <a href="https://www.instagram.com/lohani.mayuresh/" target='_blank' rel="noreferrer">
                 <FiInstagram />
               </a>
-              <a href="www.linkedin.com/in/mayuresh-lohani-87b28922a">
+              <a href="www.linkedin.com/in/mayuresh-lohani-87b28922a" target='_blank' rel="noreferrer">
                 <FaLinkedin />
               </a>
             </div>

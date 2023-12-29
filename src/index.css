@@ -11,8 +11,8 @@
 }
 
 :root {
-  --color-bg: #2d545e;
-  --color-bg-variant: #12343b;
+  --color-bg: #005C59;
+  --color-bg-variant: #007873;
   --color-primary: #e1b382;
   --color-primary-variant: #c89666;
   --color-white: #fff;
@@ -27,7 +27,6 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -38,7 +37,7 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url(../src/assests/bgimg.png); */
+  /* background-image: url(../src/assests/bg.png); */
 }
 
 /* General Styles */
@@ -126,6 +125,10 @@ img {
 
 /* Media Quries(Small Devices) */
 @media screen and (max-width: 600px) {
+  *{
+    justify-content: center;
+  }
+
   .contanier {
     width: var(--container-width-sm);
     margin: 0, 1px, 1px, 1px;
@@ -133,6 +136,11 @@ img {
 
   section > h2 {
     margin-bottom: 2rem;
+  }
+
+  .btn{
+    color: var(--color-primary);
+    background-color: var(--color-bg);
   }
 }
 
