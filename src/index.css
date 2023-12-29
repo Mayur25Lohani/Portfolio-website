@@ -125,9 +125,9 @@ img {
 
 /* Media Quries(Small Devices) */
 @media screen and (max-width: 600px) {
-  *{
+  /* *{
     justify-content: center;
-  }
+  } */
 
   .contanier {
     width: var(--container-width-sm);
