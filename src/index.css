@@ -11,12 +11,12 @@
 }
 
 :root {
-  --color-bg: #005C59;
-  --color-bg-variant: #007873;
-  --color-primary: #e1b382;
-  --color-primary-variant: #c89666;
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-bg: #003366;
+  --color-bg-variant: #44619A;
+  --color-primary: #E5F0FF;
+  --color-primary-variant: #D6A419;
+  --color-white: #D6A419;
+  --color-light: #FFEECA;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -87,11 +87,11 @@ a:hover() {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-bg);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-primary-variant);
   transition: var(--transition);
 }
 
@@ -102,8 +102,8 @@ a:hover() {
 }
 
 .btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-bg);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
 }
 
 img {

@@ -41,7 +41,8 @@
 }
 
 .about__card {
-  background: var(--color-bg-variant);
+  background: #398E89;
+  color: var(--color-bg);
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
@@ -50,6 +51,7 @@
 
 .about__card:hover {
   background: transparent;
+  color: var(--color-primary-variant);
   border-color: var(--color-primary-variant);
   cursor: default;
 }
@@ -72,6 +74,17 @@
 .about__content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
+}
+
+.about__content .btn {
+    background-color: #398E89;
+    color: #fff;
+    border: transparent;
+}
+
+.about__content .btn:hover {
+  background-color: #fff;
+  color: #398E89;
 }
 
 /* Media Quries(Medium Devices) */

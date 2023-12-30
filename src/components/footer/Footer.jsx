@@ -71,7 +71,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/lohani.mayuresh/" target='_blank' rel="noreferrer">
                 <FiInstagram />
               </a>
-              <a href="www.linkedin.com/in/mayuresh-lohani-87b28922a" target='_blank' rel="noreferrer">
+              <a href="https://www.linkedin.com/in/mayuresh-lohani-87b28922a/" target='_blank' rel="noreferrer">
                 <FaLinkedin />
               </a>
             </div>

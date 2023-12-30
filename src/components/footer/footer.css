@@ -1,8 +1,9 @@
 footer {
-    background: var(--color-primary);
+    /* background: var(--color-primary); */
     margin-top: 6.5rem;
     text-align: center;
     font-size: 17px;
+    background-image: url('../../assests/bg2.png');
   }
   
   .grid {
@@ -17,8 +18,12 @@ footer {
   }
   
   h3 {
-    color: var(--color-bg-variant);
+    color: var(--color-bg);
     font-weight: 600;
+  }
+
+  .grid-item p {
+    color: #fff;
   }
   
   .grid-item ul {
@@ -54,6 +59,7 @@ footer {
   .copyright {
     font-size: 16px;
     margin-top: 10px;
+    color: #fff;
   }
   
   input[type="email"] {
@@ -83,8 +89,8 @@ footer {
   }
   
   .footer__socials a {
-      background: var(--color-bg-variant);
-      color: var(--color-white);
+      background: #398E89;
+      color: #fff;
       padding: 0.8rem;
       border-radius: 0.7rem;
       display: flex;
@@ -93,8 +99,8 @@ footer {
   
   .footer__socials a:hover {
       background: transparent;
-      color: var(--color-bg-variant);
-      border-color: var(--color-bg-variant);
+      color: var(--color-bg);
+      border-color: var(--color-bg);
   }
   
   .underline {

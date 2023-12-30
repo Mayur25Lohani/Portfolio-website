@@ -17,7 +17,7 @@
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
+    background-image: url('../../assests/bg2.png');
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -25,20 +25,43 @@
     transition: var(--transition);
 }
 
+.contact__option h4,
+.contact__option h5 {
+    color: #398E89;
+}
+
 .contact__option:hover {
     background: transparent;
     border-color: var(--color-primary-varient);
 }
 
+.contact__option:hover h4 {
+    color: var(--color-primary-varient);
+}
+
+.contact__option:hover h5 {
+    color: var(--color-primary-varient);
+}
+
 .contact-option-icon {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: var(--color-bg);
+}
+
+.contact__option:hover .contact-option-icon {
+    color: #fff;
 }
 
 .contact__option a {
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
+    color: var(--color-bg);
+}
+
+.contact__option:hover a {
+    color: #fff;
 }
 
 form {
@@ -52,22 +75,32 @@ input, textarea {
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary);
+    border: 2px solid #398E89;
     resize: none;
-    color: var(--color-white);
+    color: var(--color-light);
+}
+
+form .btn {
+    background-color: #398E89;
+    border-color: #398E89;
+}
+
+form .btn:hover {
+    background-color: #fff;
+    color: #398E89;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--color-light);
+    color: var(--color-primary-varient);
     opacity: 1; /* Firefox */
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: var(--color-light);;
+    color: var(--color-primary-varient);;
 }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: var(--color-light);
+    color: var(--color-primary-varient);
 }
 
 /* Media Quries(Medium Devices) */

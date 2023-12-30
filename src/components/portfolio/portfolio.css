@@ -10,14 +10,14 @@
 }
 
 .portfolio__item {
-    background: var(--color-bg-variant);
+    background: #398E89;
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
 }
 
-.portfolio__items:hover {
+.portfolio__item:hover {
     border-color: var(--color-primary-varient);
     background: transparent;
 }
@@ -36,6 +36,24 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.portfolio__item-cta .btn {
+    border-color: #fff;
+}
+
+.portfolio__item:hover .portfolio__item-cta .btn {
+    background-color: #fff;
+    color: #398E89;
+}
+
+.portfolio__item-cta .btn-primary {
+    border-color: #398E89;
+}
+
+.portfolio__item:hover .portfolio__item-cta .btn-primary {
+    background-color: #398E89;
+    color: #fff;
 }
 
 /* Media Quries(Medium Devices) */

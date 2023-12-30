@@ -10,7 +10,7 @@
 }
 
 .service{
-    background: var(--color-bg-variant);
+    background-image: url('../../assests/bg2.png');
     border-radius: 0 0 2rem 2rem;
     border: 1px solid var(--color-primary);
     height: fit-content;
@@ -21,6 +21,14 @@
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+}
+
+.service:hover .service__list-icon {
+    color: #fff;
+}
+
+.service:hover .service__list p {
+    color: var(--color-primary-variant);
 }
 
 .service__head{
@@ -40,6 +48,10 @@
     padding: 2rem;
 }
 
+.service__list p {
+    color: var(--color-bg);
+}
+
 .service__list li{
     display: flex;
     gap: 1rem;
@@ -47,7 +59,7 @@
 }
 
 .service__list-icon {
-    color: var(--color-primary);
+    color: var(--color-primary-variant);
     margin-top: 2px;
 }
 
