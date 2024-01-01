@@ -79,12 +79,13 @@
 .about__content .btn {
     background-color: #398E89;
     color: #fff;
-    border: transparent;
+    border: 1px solid transparent;
 }
 
 .about__content .btn:hover {
   background-color: #fff;
   color: #398E89;
+  border-color: var(--color-primary-variant);
 }
 
 /* Media Quries(Medium Devices) */

@@ -90,6 +90,11 @@ form .btn:hover {
     color: #398E89;
 }
 
+#msg{
+    color: var(--color-primary-varient);
+    display: block;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--color-primary-varient);
     opacity: 1; /* Firefox */

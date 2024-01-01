@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import './portfolio.css'
-import IMG1 from '../../assests/Fiery Infinity with Peacock Feather.jpg'
 import IMG2 from '../../assests/ipl.jpg'
 import IMG3 from '../../assests/ir.jpg'
 import IMG4 from '../../assests/comp.jpg'
@@ -19,18 +18,18 @@ const data = [
 
   {
     id: 2,
-    image: IMG3,
-    title: 'FT Portal | Team Project',
-    // github: '#',
-    demo: 'https://ircell.iitkgp.ac.in/ftp/'
-  },
-
-  {
-    id: 3,
     image: IMG4,
     title: 'COMPOSIT Website | Team Project',
     github: 'https://github.com/Mayur25Lohani/COMPOSIT2023client',
     demo: 'https://composit.in/#/'
+  },
+
+  {
+    id: 3,
+    image: IMG3,
+    title: 'FT Portal | Team Project',
+    // github: '#',
+    demo: 'https://ircell.iitkgp.ac.in/ftp/'
   },
 
   {
@@ -43,19 +42,20 @@ const data = [
 
   {
     id: 5,
+    image: IMG7,
+    title: 'Book Store | Self Project',
+    github: 'https://github.com/Mayur25Lohani/Kshitij_Assignment1',
+    demo: 'https://mayur25lohani.github.io/Kshitij_Assignment1/'
+  },
+
+  {
+    id: 6,
     image: IMG6,
     title: 'Form Validation | Self Project',
     github: 'https://github.com/Mayur25Lohani/Form-validation',
     demo: 'https://mayur25lohani.github.io/Form-validation/'
   },
 
-  {
-    id: 6,
-    image: IMG7,
-    title: 'Book Store | Self Project',
-    github: 'https://github.com/Mayur25Lohani/Kshitij_Assignment1',
-    demo: 'https://mayur25lohani.github.io/Kshitij_Assignment1/'
-  },
 ]
 
 const Portfolio = () => {

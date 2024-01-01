@@ -3,7 +3,6 @@ import "./footer.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
-import { IoLogoTwitter } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -37,19 +36,19 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul>
               <li>
-                <a className="effect" href="#">Home</a>
-              </li>
-              <li>
                 <a className="effect" href="#about">About</a>
               </li>
               <li>
-                <a className="effect" href="#experience">Experience</a>
+                <a className="effect" href="#experience">Abilities</a>
               </li>
               <li>
-                <a className="effect" href="#services">Services</a>
+                <a className="effect" href="#services">Learnings</a>
               </li>
               <li>
-                <a className="effect" href="#">Contact</a>
+                <a className="effect" href="#portfolio">Portfolio</a>
+              </li>
+              <li>                
+                <a className="effect" href="#contact">Contact</a>
               </li>
             </ul>
           </div>

@@ -1,11 +1,43 @@
 // Link the firm to Email/Sheet needs to be done
-import React, {useEffect} from 'react'
-import './contact.css'
-import {MdOutlineMail} from 'react-icons/md'
-import {BsFacebook} from 'react-icons/bs'
-import {BsLinkedin} from 'react-icons/bs'
+import React, { useEffect, useState } from "react";
+import "./contact.css";
+import { MdOutlineMail } from "react-icons/md";
+import { BsFacebook } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
+  // const [formData, setformData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+  // const handleChange = (e) => {
+  //   const name = e.target.name;
+  //   const value = e.target.value;
+  //   setformData({ ...formData, [name]: value });
+  // };
+
+  const handleSubmit = async (e) => {
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyCtiakXcOvZG5GuP-Hy5UFX6afZqXO6p2x6SjRCzYdQdQKzVXB8aVBw4jdWWluXTdV/exec";
+    const forms = document.querySelector("form");
+    e.preventDefault();
+    console.log("Submitted")
+    const msg = document.getElementById("msg");
+    const formRes = new FormData(forms);
+    fetch(scriptURL, {
+      method: "POST",
+      body: formRes,
+    })
+      .then((response) => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function () {
+          msg.innerHTML = "";
+        }, 3000);
+        forms.reset();
+      })
+      .catch((error) => console.error("Error!", error.message));
+  };
 
   useEffect(() => {
     function reveal() {
@@ -31,54 +63,89 @@ const Contact = () => {
     };
   }, []);
 
-
   return (
-    <section id = 'contact' className='reveal fade-bottom'>
+    <section id="contact" className="reveal fade-bottom">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
-
           <article className="contact__option">
-            <MdOutlineMail className='contact-option-icon'/>
+            <MdOutlineMail className="contact-option-icon" />
             <h4>Email</h4>
             <h5>Mayuresh Lohani</h5>
-            <a href="mailto:lohanimayuresh2551@gmail.com" target='_blank' rel="noreferrer" >Send a Message</a>
+            <a
+              href="mailto:lohanimayuresh2551@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a Message
+            </a>
           </article>
 
           <article className="contact__option">
-            <BsLinkedin className='contact-option-icon'/>
+            <BsLinkedin className="contact-option-icon" />
             <h4>LinkedIn</h4>
             <h5>Mayuresh Lohani</h5>
-            <a href="https://www.linkedin.com/in/mayuresh-lohani-87b28922a/" target='_blank' rel="noreferrer" >Send a Message</a>
+            <a
+              href="https://www.linkedin.com/in/mayuresh-lohani-87b28922a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a Message
+            </a>
           </article>
 
           <article className="contact__option">
-            <BsFacebook className='contact-option-icon'/>
+            <BsFacebook className="contact-option-icon" />
             <h4>Facebook</h4>
             <h5>Mayuresh Lohani</h5>
-            <a href="https://www.facebook.com/profile.php?id=100075318804727" target='_blank'rel="noreferrer" >Send a Message</a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100075318804727"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a Message
+            </a>
           </article>
-
-          {/* <article className="contact__option">
-            <BsWhatsapp className='contact-option-icon'/>
-            <h4>WhatsApp</h4>
-            <h5>+91 7356892392</h5>
-            <a href="https://api.whatsapp.com/send?phone=+917356892392" target='_blank' rel="noreferrer">Send a Message</a>
-          </article> */}
-
         </div>
 
-        <form action="">
-          <input type="text" name="name" placeholder='Your Full Name' required />
-          <input type="text" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+        <form
+          className="form"
+          onSubmit={handleSubmit}
+        >
+          <input
+            type="text"
+            name="Name"
+            // onChange={handleChange}
+            // value={formData.name}
+            placeholder="Your Full Name"
+            required
+          />
+          <input
+            type="text"
+            name="Email"
+            // onChange={handleChange}
+            // value={formData.email}
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="Message"
+            rows="7"
+            // onChange={handleChange}
+            // value={formData.message}
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
+          <span id="msg"></span>
         </form>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
